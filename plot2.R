@@ -1,5 +1,7 @@
 plot2 <- function(){
 
+    ##### Data already downloaded to directory #####
+
     # read data
     cols <- read.table("household_power_consumption.txt", sep=";", nrows=1)
     dat  <- read.table("household_power_consumption.txt", sep=";", skip=1)
@@ -31,4 +33,7 @@ plot2 <- function(){
          ylab = "Global Active Power (kilowatts)", 
          xaxt="n", xlab="")
     axis(1, at=c(0, 1440, 2880), labels = c("Thur", "Fri", "Sat") )
+
+    ###### Save as PNG using EXPORT in RStudio ######
+
 }

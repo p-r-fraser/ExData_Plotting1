@@ -1,5 +1,7 @@
 plot3 <- function(){
 
+    ##### Data already downloaded to directory #####
+
     # read data
     cols <- read.table("household_power_consumption.txt", sep=";", nrows=1)
     dat  <- read.table("household_power_consumption.txt", sep=";", skip=1)
@@ -36,4 +38,7 @@ plot3 <- function(){
     legend("top", col=c("black","red","blue"), 
            legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
            lty=c(1,1,1), bty="n")
+
+    ###### Save as PNG using EXPORT in RStudio ######
+
 }

@@ -1,7 +1,6 @@
 plot1 <- function(){
 
-    #### Data already downloaded to directory, ####
-    ####       & png printed using RStudio     ####
+    ##### Data already downloaded to directory #####
 
     # read data
     cols <- read.table("household_power_consumption.txt", sep=";", nrows=1)
@@ -34,4 +33,6 @@ plot1 <- function(){
                        col="red", main="Global Active Power", 
                        xlab="Global Active Power (kilowatts)",
                        breaks=c(0,0.5,1,1.5,2,2.5,3,3.5,4,4.5,5,5.5,6,6.5,7,7.5))) 
+
+    ###### Save as PNG using EXPORT in RStudio ######
 }
