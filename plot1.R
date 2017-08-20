@@ -1,5 +1,8 @@
 plot1 <- function(){
 
+    #### Data already downloaded to directory, ####
+    ####       & png printed using RStudio     ####
+
     # read data
     cols <- read.table("household_power_consumption.txt", sep=";", nrows=1)
     dat  <- read.table("household_power_consumption.txt", sep=";", skip=1)
